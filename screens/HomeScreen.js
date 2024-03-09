@@ -1,16 +1,13 @@
-import { Text, View, StyleSheet, StatusBar } from "react-native";
-
+import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
-      <Text style={styles.text}>Home Screen</Text>
+      <Text>HomeScreen</Text>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

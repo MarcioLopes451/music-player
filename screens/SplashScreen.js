@@ -1,18 +1,20 @@
-import { Text, View, StyleSheet, Image } from "react-native";
-import { useEffect, useLayoutEffect } from "react";
+import { Text, View, StyleSheet, Image, StatusBar } from "react-native";
+import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import Logo from "../images/RHYTMO.png";
+import Logo from "../images/RHYTMO (1).png";
 
 export default function SplashScreen() {
   const navigation = useNavigation();
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate("HomeScreen");
+      navigation.navigate("GetStarted");
     }, 3000);
   }, []);
+
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
       <Image source={Logo} />
     </View>
   );
